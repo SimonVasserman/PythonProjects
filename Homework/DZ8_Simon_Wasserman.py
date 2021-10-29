@@ -52,20 +52,25 @@ print(3 == multiply_list([1, 2]))  # expected result - "2"
 print(-5 == multiply_list([1, -5, 1]))  # expected result -  "-5"
 print(1 == multiply_list([1, 0, 0, 0]))  # expected result - "0"
 
+
 ##########################################
 # DZ8.6
 
-n = int(input())
-i = 1
-assert i == 1  # expected  i == 1 , if 0 --> Error
-while i < n:
-    assert i < n  # if n < i expected --> Error
-    i = i * 2
-if i == n:
-    print("YES")
-else:
-    print("NO")
+def natural_2(n):
+    i = 1
+    while i < n:
+        i = i * 2
+        if i == n:
+            print("YES")
+        else:
+            print("NO")
 
+
+natural_2(4)  # expected "YES"
+natural_2(2)  # expected "YES"
+natural_2(5)  # expected "NO"
+natural_2(8)  # expected "YES"
+natural_2(1)  # expected "NO"
 
 ##########################################
 # DZ8.7
