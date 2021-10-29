@@ -66,11 +66,11 @@ def natural_2(n):
             print("NO")
 
 
-natural_2(4)  # expected "YES"
-natural_2(2)  # expected "YES"
-natural_2(5)  # expected "NO"
-natural_2(8)  # expected "YES"
-natural_2(1)  # expected "NO"
+natural_2(4)  # expected "2" - "YES"
+natural_2(2)  # expected "1" - "YES"
+natural_2(5)  # expected  "NO"
+natural_2(8)  # expected  "4" - "YES"
+natural_2(1)  # expected nothing - "NO"
 
 ##########################################
 # DZ8.7
