@@ -8,11 +8,11 @@ def sum_digits(n):
 
 print(sum_digits(5))
 
-print(10 == sum_digits(10))
-print(5 == sum_digits(5))
-print(4 == sum_digits(4))
-print(11 == sum_digits(11))
-print(1 == sum_digits(1))
+print(10 == sum_digits(10))  # expected result - "1"
+print(5 == sum_digits(5))  # expected result - "5"
+print(4 == sum_digits(4))  # expected result - "4"
+print(11 == sum_digits(11))  # expected result - "2"
+print(1 == sum_digits(1))  # expected result -  "1"
 
 
 #########################################
@@ -26,11 +26,11 @@ def fib(n, c=0, p=1):
 
 print(fib(7))
 
-print(13 == fib(7))
-print(5 == fib(5))
-print(4 == fib(4))
-print(11 == fib(11))
-print(1 == fib(1))
+print(13 == fib(7))  # expected result - "13"
+print(5 == fib(5))  # expected result - "5"
+print(4 == fib(4))  # expected result - "3"
+print(11 == fib(11))  # expected result - "89"
+print(1 == fib(1))  # expected result - "1"
 
 ##########################################
 # DZ8.5
@@ -46,18 +46,20 @@ def multiply_list(list):
 
 print(multiply_list(my_list))
 
-print(6480 == multiply_list(my_list))
-print(24 == multiply_list([4, 3, 2, 1]))
-print(3 == multiply_list([1, 2]))
-print(-5 == multiply_list([1, -5, 1]))
-print(1 == multiply_list([1, 0, 0, 0]))
+print(6480 == multiply_list(my_list))  # expected result - "6480"
+print(24 == multiply_list([4, 3, 2, 1]))  # expected result - "24"
+print(3 == multiply_list([1, 2]))  # expected result - "2"
+print(-5 == multiply_list([1, -5, 1]))  # expected result -  "-5"
+print(1 == multiply_list([1, 0, 0, 0]))  # expected result - "0"
 
 ##########################################
 # DZ8.6
 
 n = int(input())
 i = 1
+assert i == 1  # expected  i == 1 , if 0 --> Error
 while i < n:
+    assert i < n  # if n < i expected --> Error
     i = i * 2
 if i == n:
     print("YES")
@@ -77,8 +79,8 @@ def outer(a, b):
 
 print(outer(3, 2))
 
-print(20 == outer(10, 5))
-print(28 == outer(14, 5))
-print(13 == outer(2, 5))
-print(7 == outer(2, 0))
-print(5 == outer(-5, -10))
+print(20 == outer(10, 5))  # expected "20"
+print(28 == outer(14, 5))  # expected "24"
+print(13 == outer(2, 5))  # expected "13"
+print(7 == outer(2, 0))  # expected "7"
+print(5 == outer(-5, -10))  # expected "-10"
