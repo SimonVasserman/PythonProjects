@@ -56,7 +56,8 @@ my_list2 = [
     [58132, 'Effective Modern C++: 42 Specific Ways to Improve Your Use of C++11 and C++14', 9, 42.89]
 ]
 
-my_list.extend(my_list2)
+my_list.extend(my_list2)  # .extend расширяет первый список вторым списком,
+# то  есть в конец перого списка добавляется второй список
 print(my_list)
 # DZ9.4
 
