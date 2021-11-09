@@ -1,15 +1,6 @@
 # DZ10.1
-
 import random
 
-
-# numbers = open("numbers.txt", "wt")
-#
-# for i in range(1, 901):
-#     numbers.write(str(random.randint(1, 100)) + " ")
-#     if i % 9 == 0:
-#         numbers.write(str(random.randint(1, 100)) + "\n")
-# numbers.close()
 
 def create_and_write(filename):
     with open(f"{filename}.txt", "w") as file:
