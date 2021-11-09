@@ -29,7 +29,6 @@ my_list = [
 ]
 
 
-
 def need_list(my_list, n):
     my_result = []
     for i in my_list:
