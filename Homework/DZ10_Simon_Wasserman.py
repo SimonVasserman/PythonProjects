@@ -2,6 +2,7 @@
 
 import random
 
+
 # numbers = open("numbers.txt", "wt")
 #
 # for i in range(1, 901):
@@ -23,26 +24,31 @@ def create_and_write(filename):
 create_and_write('numbers')
 
 
-
 # DZ10.2
 
 def read_and_add(filename):
     with open(f"{filename}.txt", "r+") as file:
         my_list = file.readlines()
         for line in my_list:
-            result = [int(value)**2 for value in line.split()]
+            result = [int(value) ** 2 for value in line.split()]
             file.write(" ".join(map(str, result)) + '\n')
 
 
 read_and_add("numbers")
 
-#tests
+# tests
 
+create_and_write('test1')
+read_and_add('test1')
 
+create_and_write('test2')
+read_and_add('test2')
 
+create_and_write('test3')
+read_and_add('test3')
 
+create_and_write('test4')
+read_and_add('test4')
 
-
-
-
-
+create_and_write('test5')
+read_and_add('test5')
