@@ -29,17 +29,17 @@ read_and_add("numbers")
 
 # tests
 
-create_and_write('test1')
-read_and_add('test1')
+create_and_write("test1")
+read_and_add("test1")
 
-create_and_write('test2')
-read_and_add('test2')
+create_and_write("test2")
+read_and_add("test2")
 
-create_and_write('test3')
-read_and_add('test3')
+create_and_write("test3")
+read_and_add("test3")
 
-create_and_write('test4')
-read_and_add('test4')
+create_and_write("test4")
+read_and_add("test4")
 
-create_and_write('test5')
-read_and_add('test5')
+create_and_write("test5")
+read_and_add("test5")
