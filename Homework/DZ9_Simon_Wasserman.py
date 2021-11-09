@@ -68,3 +68,6 @@ print(sorted_list_price)
 sorted_list_quantity = list(filter(lambda x: x[2] > 5, my_list))
 print(sorted_list_quantity)
 
+
+
+
