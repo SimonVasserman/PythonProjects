@@ -23,6 +23,7 @@ def create_and_write(filename):
 create_and_write('numbers')
 
 
+
 # DZ10.2
 
 def read_and_add(filename):
