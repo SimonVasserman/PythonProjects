@@ -34,13 +34,13 @@ def subtract(number1, number2):
 
 def multiply(number1, number2):
     if number2 == 0:
-        raise FormulaError("Can not multiply a number by 0.")
+        raise ZeroDivisionError("Can not multiply a number by 0.")
     return number1 * number2
 
 
 def divide(number1, number2):
     if number2 == 0:
-        raise FormulaError("Can not divide a number by 0.")
+        raise ZeroDivisionError("Can not divide a number by 0.")
     return number1 / number2
 
 
@@ -63,10 +63,5 @@ while True:
     print(result)
 
 
-def ExpectEqual(actual, expected):
-    if actual == expected:
-        print("SUCCESS")
-    else:
-        print(f"FAILED: actual: {actual}, expected{expected}")
 
-ExpectEqual()
+
