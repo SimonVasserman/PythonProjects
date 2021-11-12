@@ -57,3 +57,4 @@ while True:
     number1, operator, number2 = parse_input(user_input)
     result = calculate(number1, operator, number2)
     print(result)
+
