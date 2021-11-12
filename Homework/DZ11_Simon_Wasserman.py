@@ -14,7 +14,7 @@ def parse_input(user_input):
     :return:  float, str, float
     """
     input_list = user_input.split()  # default - space
-    if len(input_list) != 3:
+    if len(input_list) == 3:
         raise FormulaError('Input does not consist of 3 elements')
     number_1, operator, number_2 = input_list
     try:
@@ -51,7 +51,7 @@ def calculate(num1, operator, num2):
 
 
 while True:
-    user_input = input('Enter to calculate ->')
+    user_input = input('Enter value for calculate ->')
     if user_input == 'exit':
         break
     number1, operator, number2 = parse_input(user_input)
