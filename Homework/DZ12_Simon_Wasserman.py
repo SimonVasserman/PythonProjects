@@ -43,7 +43,8 @@ h1 = Homework("OOP Part 2",
               "Create class Table for all students",
               4,
               False)
-h2 = Homework("OOP Part 3", "Create function to output informations about students, 
+h2 = Homework("OOP Part 3", 
+              "Create function to output informations about students, 
                status of homeworks", 
                4,
                False)
