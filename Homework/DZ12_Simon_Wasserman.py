@@ -43,11 +43,12 @@ h1 = Homework("OOP Part 2",
               "Create class Table for all students",
               4,
               False)
-h2 = Homework("OOP Part 3", 
-              "For class Table create function to output 
-              informations about students and status of homeworks",
-              4,
+h2 = Homework("OOP Part 3", "For class Table 
+              create function to output informations about students 
+              and status of homeworks", 4,
               False)
+
+
 for student in school:
     student.add_homework(h)
     student.add_homework(h1)
