@@ -39,9 +39,18 @@ h = Homework("OOP intorduction",
              "Extend logic for Student program",
              2,
              False)
-
+h1 = Homework("OOP Part 2",
+              "Create class Table for all students",
+              4,
+              False)
+h2 = Homework("OOP Part 3", 
+              "For class Table create function to output 
+              informations about students and status of homeworks",
+              4,
+              False)
 for student in school:
     student.add_homework(h)
-    
+    student.add_homework(h1)
+    student.add_homework(h2)
 print(school[0].is_homework_done())
-add_homework(2)
+
