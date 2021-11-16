@@ -35,6 +35,12 @@ def sort_students_by_grade(students):
     return student.grade
 
 
+
+class Table(Student)
+    def __init__(self):
+        print("")
+
+
 school = [Student("Ivan", 25, 0),
           Student("Ivan 2", 25, 0),
           Student("Ivan 3", 25, 0)]
@@ -47,7 +53,7 @@ h1 = Homework("OOP Part 2",
               4, False)
 h2 = Homework("OOP Part 3",
               "Create function to output information about students,status of homeworks",
-              4, False)
+              3, False)
 
 for student in school:
     student.add_homework(h)
