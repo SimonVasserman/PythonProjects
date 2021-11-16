@@ -24,6 +24,9 @@ class Student:
             raise Exception("Homeworks is empty")
         return self.homeworks[0].status
 
+    def change_status_homework(self, homework):
+        pass
+
 
 def sort_students_by_age(students):
     sorted(school, key=lambda student: student.age)
@@ -45,7 +48,7 @@ school = [Student("Ivan", 25, 0),
           Student("Ivan 2", 25, 0),
           Student("Ivan 3", 25, 0)]
 
-h = Homework("OOP intorduction",
+h = Homework("OOP introduction",
              "Extend logic for Student program",
              2, False)
 h1 = Homework("OOP Part 2",
