@@ -47,6 +47,7 @@ def divide(number1, number2):
 operations = {'+': add, '-': subtract, '*': multiply, '/': divide}
 
 
+
 def calculate(num1, operator, num2):
     operation = operations.get(operator)
     if operation:
