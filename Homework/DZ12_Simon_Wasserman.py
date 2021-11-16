@@ -44,3 +44,4 @@ for student in school:
     student.add_homework(h)
     
 print(school[0].is_homework_done())
+add_homework(2)
