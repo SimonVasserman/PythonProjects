@@ -26,7 +26,7 @@ class Student:
 
 
 def sort_students_by_age(students):
-    sorted(school, key=lambda students: student.age)
+    sorted(school, key=lambda student: student.age)
     return student.age
 
 
