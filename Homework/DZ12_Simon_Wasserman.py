@@ -5,6 +5,7 @@ class Homework:
         self.complexity = complexity
         self.status = status
 
+
 class Student:
     def __init__(self, name, age, grade):
         self.name = name
@@ -23,13 +24,16 @@ class Student:
             raise Exception("Homeworks is empty")
         return self.homeworks[0].status
 
+
 def sort_students_by_age(students):
-    sorted(school, key= lambda students: student.age)
+    sorted(school, key=lambda students: student.age)
     return student.age
 
+
 def sort_students_by_grade(students):
-    sorted(school, key= lambda student: student.grade)
+    sorted(school, key=lambda student: student.grade)
     return student.grade
+
 
 school = [Student("Ivan", 25, 0),
           Student("Ivan 2", 25, 0),
@@ -37,22 +41,19 @@ school = [Student("Ivan", 25, 0),
 
 h = Homework("OOP intorduction",
              "Extend logic for Student program",
-             2,
-             False)
+             2, False)
 h1 = Homework("OOP Part 2",
               "Create class Table for all students",
-              4,
-              False)
-h2 = Homework("OOP Part 3", 
-              "Create function to output informations about students, 
-               status of homeworks", 
-               4,
-               False)
-
+              4, False)
+h2 = Homework("OOP Part 3",
+              "Create function to output information about students,status of homeworks",
+              4, False)
 
 for student in school:
     student.add_homework(h)
     student.add_homework(h1)
     student.add_homework(h2)
+
 print(school[0].is_homework_done())
+
 
