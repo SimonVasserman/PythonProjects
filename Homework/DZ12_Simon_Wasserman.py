@@ -26,7 +26,7 @@ class Student:
 
     def change_status_homework(self):
         if len(self.homeworks) == 1:
-            return self.homeworks[0].status == 1
+            return self.homeworks[].status == 1  #?
 
 
 class Table(Student):
