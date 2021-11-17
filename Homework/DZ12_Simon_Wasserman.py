@@ -59,9 +59,18 @@ h2 = Homework("OOP Part 3",
               "Create function to output information about students,status of homeworks",
               3, False)
 
+# add homework to students:
 for student in school:
     student.add_homework(h)
     student.add_homework(h1)
     student.add_homework(h2)
 
 print(school[0].is_homework_done())
+
+# # sorted by age:
+# for student in school:
+#     print(sort_students_by_age(student))
+#
+# # sorted by grade:
+# for student in school:
+#     print(sort_students_by_grade(student))
