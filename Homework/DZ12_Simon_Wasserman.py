@@ -24,7 +24,7 @@ class Student:
             raise Exception("Homeworks is empty")
         return self.homeworks[0].status
 
-    def change_status_homework(self, homework):
+    def change_status_homework(self):
         if len(self.homeworks) == 1:
             return self.homeworks[0].status == 1
 
