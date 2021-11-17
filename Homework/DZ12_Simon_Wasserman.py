@@ -25,7 +25,13 @@ class Student:
         return self.homeworks[0].status
 
     def change_status_homework(self, homework):
-        pass
+        if len(self.homeworks) == 1:
+            return self.homeworks[0].status == 1
+
+
+class Table(Student):
+    def __str__(self):
+        return f"name: {self.name}, age: {self.age}, grade: {self.grade}"
 
 
 def sort_students_by_age(students):
@@ -38,15 +44,10 @@ def sort_students_by_grade(students):
     return student.grade
 
 
-
-class Table(Student)
-    def __init__(self):
-        print("")
-
-
 school = [Student("Ivan", 25, 0),
-          Student("Ivan 2", 25, 0),
-          Student("Ivan 3", 25, 0)]
+          Student("Peter", 28, 0),
+          Student("Marina", 20, 0),
+          Student("Georg", 18, 0)]
 
 h = Homework("OOP introduction",
              "Extend logic for Student program",
@@ -64,5 +65,3 @@ for student in school:
     student.add_homework(h2)
 
 print(school[0].is_homework_done())
-
-
