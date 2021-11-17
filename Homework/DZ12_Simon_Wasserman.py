@@ -30,6 +30,7 @@ class Student:
 
 
 class Table(Student):
+    pass
 
     def __str__(self):
         return f"name: {self.name}, age: {self.age}, grade: {self.grade}"
@@ -75,4 +76,3 @@ print(school[0].is_homework_done())
 # # sorted by grade:
 # for student in school:
 #     print(sort_students_by_grade(student))
-
