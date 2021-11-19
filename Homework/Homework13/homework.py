@@ -4,3 +4,6 @@ class Homework:
         self.description = description
         self.complexity = complexity
         self.status = status
+
+    def __repr__(self):
+        return f"{self.name} | {self.status}"
