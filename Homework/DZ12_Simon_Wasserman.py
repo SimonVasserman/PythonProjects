@@ -109,3 +109,4 @@ for item in summary:
     print(item)
 
 print(table.get_summary_table())
+
