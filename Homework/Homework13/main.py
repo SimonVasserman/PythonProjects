@@ -7,7 +7,7 @@ from table import Table
 
 school = [Student("Ivan", 25, 0), Student("Peter", 28, 0), Student("Marina", 17, 0), Student("Bogdan", 20, 0)]
 
-hw = Homework("OOP intorduction", "Extend logic for Student program", 2, False)
+hw = Homework("OOP Introduction", "Extend logic for Student program", 2, False)
 hw2 = Homework("Python web", "Extend logic for Student program", 2, False)
 hw3 = Homework("OOP Part 3", "Create function to output information about students,status of homeworks", 3, False)
 table = Table(name="Intro Python")
