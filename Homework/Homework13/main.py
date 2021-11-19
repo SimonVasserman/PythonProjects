@@ -27,7 +27,7 @@ print(table.get_summary_table())
 print("Student ->", school[0])
 t = Teacher("Fedor", 31)
 print("Teacher ->", t)
-e = Employee("Sidor", 45)
+e = Employee("Viktor", 45)
 print("Employee ->", e)
 
 exit(0)
