@@ -115,6 +115,7 @@ for student in school:
     table.add_student(student)
     student.change_homework_status(1, True)
 
+
 summary = table.get_summary()
 for item in summary:
     print(item)
