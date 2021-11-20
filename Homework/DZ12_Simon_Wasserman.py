@@ -113,6 +113,7 @@ for student in school:
     student.add_homework(2, hw2)
     student.add_homework(3, hw3)
     table.add_student(student)
+    student.change_homework_status(1, True)
 
 summary = table.get_summary()
 for item in summary:
