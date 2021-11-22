@@ -1,6 +1,18 @@
+"""
+This module contains helper functions for colored test
+
+Uses the module Inspect for coloring information
+
+"""
 import inspect
 
+
 def GetColor(color_name):
+    """
+    This function getting a color to arguments that tested
+    @param color_name:  get color to arguments
+    @return:
+    """
     assert color_name != "NAME" or color_name != "SUCCESS" or color_name != "FAILED" or color_name != "LINE"
 
     if color_name == "NAME":
@@ -12,7 +24,13 @@ def GetColor(color_name):
     elif color_name == "LINE":
         return '\033[39m'
 
+
 def GetParameter(param_name):
+    """
+    This function getting a parameter of arguments that tested
+    @param param_name: get parameter of  arguments
+    @return:
+    """
     assert param_name != "TestName" or param_name != "TestLine"
 
     if param_name == "TestName":
