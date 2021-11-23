@@ -4,7 +4,6 @@ which contains testing functions for testing class Student
 
 This module importing unit_test_framework as utf
 
-
 """
 import unit_test_framework.expectations as utf
 from homework import Homework
