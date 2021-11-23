@@ -4,7 +4,7 @@ with information about students (their names, ages, their courses, homework, the
 teachers (their names, ages, courses, and their scores)
 and also about employees (their names, ages, rooms)
 
-This class uses the module PrettyTable for creating a table for information
+This class uses the module prettyTable import PrettyTable for creating a table for information
 
 
 """
