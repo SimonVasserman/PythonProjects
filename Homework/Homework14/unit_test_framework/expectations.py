@@ -26,13 +26,13 @@ def ExpectEqual(actual, expected):
 
 
 def ExpectNotEqual(actual, expected):
-     """
-    This function tests for strings and name
-    If actual and expected  not match the test passed
-    if not, there will be an error
-    @param actual:  that will be testing
-    @param expected: expect should be
     """
+   This function tests for strings and name
+   If actual and expected  not match the test passed
+   if not, there will be an error
+    @param actual:  that will be testing
+   @param expected: expect should be
+   """
     line_number = GetParameter("TestLine")
     test_name = GetParameter("TestName")
 
@@ -46,10 +46,10 @@ def ExpectNotEqual(actual, expected):
 
 
 def ExpectThrown(block, exception):
-    """
-   This function tests for strings and name
-   If block, the test will be passed
-   if not, there will be an error
+   """
+    This function tests for strings and name
+    If block, the test will be passed
+     if not, there will be an error
     @param block: block the  program
     @param exception: type exceptions, else typing exception don't thrown.
    """
