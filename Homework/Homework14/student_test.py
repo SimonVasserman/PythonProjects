@@ -101,7 +101,7 @@ class StudentTest:
             """
             If it happened to block and generate an error
             """
-            self.test_student.add_homework(Homework("", "", 0, True))
+        self.test_student.add_homework(Homework("", "", 0, True))
 
         utf.ExpectThrown(block, HomeworkStatusException())
 
@@ -115,3 +115,5 @@ student_test.Student_Name_Test_1()
 student_test.Student_Age_Test_1()
 student_test.Student_Grade_Test_1()
 student_test.Student_AddHomework_Exception_Test_1()
+
+

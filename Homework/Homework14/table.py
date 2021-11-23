@@ -4,19 +4,20 @@ with information about students (their names, ages, their courses, homework, the
 teachers (their names, ages, courses, and their scores)
 and also about employees (their names, ages, rooms)
 
+This module  uses  prettytable for creating a Table in Python Console
+
 """
+from prettytable import prettytable
 
-from prettytable import PrettyTable
-
-resultTable = PrettyTable()
-resultTable_t = PrettyTable()
-resultTable_e = PrettyTable()
+resultTable = prettytable.PrettyTable()
+resultTable_t = prettytable.PrettyTable()
+resultTable_e = prettytable.PrettyTable()
 
 
 class Table:
     def __init__(self, name):
         """
-
+        Describe of Table
         @param name: Name of Students, Teachers and Employees
         """
         self.name = name
@@ -26,7 +27,7 @@ class Table:
 
     def __str__(self):
         """
-
+        Describe of Table
         @return: name of Students, Teachers and Employees
         """
         return self.name
