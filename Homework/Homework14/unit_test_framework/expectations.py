@@ -46,26 +46,24 @@ def ExpectNotEqual(actual, expected):
 
 
 def ExpectThrown(block, exception):
-   """
+    """
     This function tests for strings and name
     If block, the test will be passed
      if not, there will be an error
     @param block: block the  program
     @param exception: type exceptions, else typing exception don't thrown.
    """
-   line_number = GetParameter("TestLine")
-   test_name = GetParameter("TestName")
-   message = GetColor("NAME") + test_name() + "(" + GetColor("LINE") + f"line:{line_number()}" + GetColor(
-       "NAME") + ") - \t"
-   try:
-       block()
-   except type(exception):
-       message += GetColor("SUCCESS") + "SUCCESS"
-   else:
-       message += GetColor("FAILED") + f" exception {type(exception)} don't thrown."
-   print(message)
-
-
+    line_number = GetParameter("TestLine")
+    test_name = GetParameter("TestName")
+    message = GetColor("NAME") + test_name() + "(" + GetColor("LINE") + f"line:{line_number()}" + GetColor(
+        "NAME") + ") - \t"
+    try:
+        block()
+    except type(exception):
+        message += GetColor("SUCCESS") + "SUCCESS"
+    else:
+        message += GetColor("FAILED") + f" exception {type(exception)} don't thrown."
+    print(message)
 
 
 def ExpectNotThrown(block):
