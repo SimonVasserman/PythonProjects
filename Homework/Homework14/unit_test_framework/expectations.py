@@ -1,7 +1,6 @@
 """
 This module contains functions of custom  Exception for checking tests of  Expect & Actual
 """
-
 from unit_test_framework.helper import *
 
 
@@ -71,8 +70,7 @@ def ExpectNotThrown(block):
        This function tests for strings and name
        If block, the test will blocked
        if not, test will be passed
-        @param block: block the  program, typing exception don't thrown.
-        @param exception: type exceptions, else typing success
+        @param block: block the  program, typing exception don't thrown,  else typing success
        """
     line_number = GetParameter("TestLine")
     test_name = GetParameter("TestName")
