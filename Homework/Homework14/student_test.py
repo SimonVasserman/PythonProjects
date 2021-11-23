@@ -65,7 +65,7 @@ class StudentTest:
         Check of adding a Homework to  Student
         """
         self.StudentTestSetUp()
-        self.test_student.add_homework(Homework("", "", 0, 0))
+        self.test_student.add_homework(Homework("", "", 0, 0)
         actual = len(self.test_student.homeworks)
         expected = 1
         utf.ExpectEqual(actual, expected)

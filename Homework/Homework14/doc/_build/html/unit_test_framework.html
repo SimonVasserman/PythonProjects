@@ -37,14 +37,78 @@
 <section id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
 </section>
-<section id="unit-test-framework-expectations-module">
-<h2>unit_test_framework.expectations module<a class="headerlink" href="#unit-test-framework-expectations-module" title="Permalink to this headline">¶</a></h2>
+<section id="module-unit_test_framework.expectations">
+<span id="unit-test-framework-expectations-module"></span><h2>unit_test_framework.expectations module<a class="headerlink" href="#module-unit_test_framework.expectations" title="Permalink to this headline">¶</a></h2>
+<p>This module contains functions of custom  Exception for checking tests of  Expect &amp; Actual</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="unit_test_framework.expectations.ExpectEqual">
+<span class="sig-prename descclassname"><span class="pre">unit_test_framework.expectations.</span></span><span class="sig-name descname"><span class="pre">ExpectEqual</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">actual</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unit_test_framework.expectations.ExpectEqual" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function tests for strings and name
+If actual and expected match the test passed
+if not, there will be an error
+&#64;param actual:  that will be testing
+&#64;param expected: expect should be</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="unit_test_framework.expectations.ExpectNotEqual">
+<span class="sig-prename descclassname"><span class="pre">unit_test_framework.expectations.</span></span><span class="sig-name descname"><span class="pre">ExpectNotEqual</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">actual</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unit_test_framework.expectations.ExpectNotEqual" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function tests for strings and name
+If actual and expected  not match the test passed
+if not, there will be an error</p>
+<blockquote>
+<div><p>&#64;param actual:  that will be testing</p>
+</div></blockquote>
+<p>&#64;param expected: expect should be</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="unit_test_framework.expectations.ExpectNotThrown">
+<span class="sig-prename descclassname"><span class="pre">unit_test_framework.expectations.</span></span><span class="sig-name descname"><span class="pre">ExpectNotThrown</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">block</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unit_test_framework.expectations.ExpectNotThrown" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function tests for strings and name
+If block, the test will blocked
+if not, test will be passed</p>
+<blockquote>
+<div><p>&#64;param block: block the  program, typing exception don’t thrown,  else typing success</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="unit_test_framework.expectations.ExpectThrown">
+<span class="sig-prename descclassname"><span class="pre">unit_test_framework.expectations.</span></span><span class="sig-name descname"><span class="pre">ExpectThrown</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">block</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exception</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unit_test_framework.expectations.ExpectThrown" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function tests for strings and name
+If block, the test will be passed</p>
+<blockquote>
+<div><p>if not, there will be an error</p>
+</div></blockquote>
+<p>&#64;param block: block the  program
+&#64;param exception: type exceptions, else typing exception don’t thrown.</p>
+</dd></dl>
+
 </section>
-<section id="unit-test-framework-helper-module">
-<h2>unit_test_framework.helper module<a class="headerlink" href="#unit-test-framework-helper-module" title="Permalink to this headline">¶</a></h2>
+<section id="module-unit_test_framework.helper">
+<span id="unit-test-framework-helper-module"></span><h2>unit_test_framework.helper module<a class="headerlink" href="#module-unit_test_framework.helper" title="Permalink to this headline">¶</a></h2>
+<p>This module contains helper functions for colored test</p>
+<p>Uses the module Inspect for coloring information</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="unit_test_framework.helper.GetColor">
+<span class="sig-prename descclassname"><span class="pre">unit_test_framework.helper.</span></span><span class="sig-name descname"><span class="pre">GetColor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">color_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unit_test_framework.helper.GetColor" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function getting a color to arguments that tested
+&#64;param color_name:  get color to arguments
+&#64;return:</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="unit_test_framework.helper.GetParameter">
+<span class="sig-prename descclassname"><span class="pre">unit_test_framework.helper.</span></span><span class="sig-name descname"><span class="pre">GetParameter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">param_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unit_test_framework.helper.GetParameter" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function getting a parameter of arguments that tested
+&#64;param param_name: get parameter of  arguments
+&#64;return:</p>
+</dd></dl>
+
 </section>
-<section id="module-contents">
-<h2>Module contents<a class="headerlink" href="#module-contents" title="Permalink to this headline">¶</a></h2>
+<section id="module-unit_test_framework">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-unit_test_framework" title="Permalink to this headline">¶</a></h2>
 </section>
 </section>
 
