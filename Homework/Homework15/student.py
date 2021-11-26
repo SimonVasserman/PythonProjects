@@ -30,6 +30,13 @@ class Student(Person):
     def __repr__(self):
         return f"{self._name} | {self._age} | {self._homeworks} | {self._subscribed_courses}"
 
+    def __str__(self):
+        return f"{self._name} | {self._age} | {self._homeworks} | {self._subscribed_courses}"
+
+    def __eq__(self, other):
+        return isinstance(other, Student) and self.name == other.name \
+               and self._age == other._age
+
     def add_homework(self, hw_number, homework):
         """
         Add new homework object to the self.homeworks collection

@@ -25,7 +25,14 @@ class Teacher(Person):
         self._courses = []
 
     def __str__(self):
-        return super().__str__() + f"{self._age} | {self._score} | {self._courses}"
+        return super().__str__() + f"{self._age} | {self._score} | {self._courses} "
+
+    def __repr__(self):
+        return super().__str__() + f"{self._age} | {self._score} | {self._courses} "
+
+    def __eq__(self, other):
+        return isinstance(other, Teacher) and self._name == other._name \
+               and self._age == other._age
 
     def add_courses(self, course):
         """

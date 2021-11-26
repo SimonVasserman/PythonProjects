@@ -22,3 +22,10 @@ class Employee(Person):
 
     def __str__(self):
         return super().__str__() + f"{self._age} | {self._room} "
+
+    def __repr__(self):
+        return super().__str__() + f"{self._age} | {self._room} "
+
+    def __eq__(self, other):
+        return isinstance(other, Employee) and self._name == other._name \
+               and self._age == other._age

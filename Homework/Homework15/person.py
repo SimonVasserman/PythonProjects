@@ -19,8 +19,14 @@ class Person:
         self._age = age
 
     def __str__(self):
-        return f"Name: {self._name}\nage: {self._age}"
+        return f"Name: {self._name}\nage: {self._age} "
 
-    @property
+    def __repr__(self):
+        return f"Name: {self._name}\nage: {self._age} "
+
     def name(self):
         return self._name
+
+    def __eq__(self, other):
+        return isinstance(other, Person) and self.name == other.name \
+               and self._age == other._age

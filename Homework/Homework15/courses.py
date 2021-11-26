@@ -26,3 +26,9 @@ class Course:
         return f"{self.__name} | {self.__description} | {self.__start_date}-{self.__end_date} |" \
                f" lessons:{self.__quantity_lesson} "
 
+    def __str__(self):
+        return f"{self.__name} | {self.__description} | {self.__start_date}-{self.__end_date} |" \
+               f" lessons:{self.__quantity_lesson} "
+
+    def __eq__(self, other):
+        return isinstance(other, Course) and self.__name == other._name

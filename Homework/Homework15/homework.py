@@ -22,4 +22,10 @@ class Homework:
         self.status = status
 
     def __repr__(self):
-        return f"{self.name} | {self.status}"
+        return f"{self.name} | {self.status} "
+
+    def __str__(self):
+        return f"{self.name} | {self.status} "
+
+    def __eq__(self, other):
+        return isinstance(other, Homework) and self._name == other._name

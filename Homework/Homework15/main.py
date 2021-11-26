@@ -6,14 +6,13 @@ from student import Student
 from table import Table
 from courses import Course
 
-
 school = [Student("Ivan", 25, 0), Student("Peter", 28, 0), Student("Marina", 17, 0), Student("Bogdan", 20, 0),
           Student("Artem", 23, 0), Student("Maria", 21, 0), Student("Mike", 27, 0), Student("Nikita", 24, 0),
           Student("Artur", 21, 0), Student("Julia", 26, 0), Student("Anton", 29, 0), Student("Ludmila", 30, 0),
           Student("Maxim", 32, 0), Student("Andrey", 19, 0)]
 
 teachers = [Teacher("Fedor", 35), Teacher("Vladimir", 40)]
-employees = [Employee("Viktor", 32,)]
+employees = [Employee("Viktor", 32, )]
 
 hw = Homework("OOP Introduction", "Extend logic for Student program", 2, False)
 hw2 = Homework("Python web", "Extend logic for Student program", 2, False)
@@ -71,5 +70,8 @@ print(courses[2].__str__())
 # exit(0)
 #
 # print(school[0].is_homework_done())
+
+print(school[2].__str__())
+
 
 

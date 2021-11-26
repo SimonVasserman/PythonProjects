@@ -34,6 +34,16 @@ class Table:
         """
         return self._name
 
+    def __repr__(self):
+        """
+        Describe of Table
+        @return: name of Students, Teachers and Employees
+        """
+        return self._name
+
+    def __eq__(self, other):
+        return isinstance(other, Table) and self._name == other._name
+
     def add_student(self, student_obj):
         """
         This function adds students to the table
