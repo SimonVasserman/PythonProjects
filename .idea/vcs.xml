@@ -2,5 +2,8 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/CyberSecScripts" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/CyberSecurityAppleCalenderPlan" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/PythonProjects" vcs="Git" />
   </component>
 </project>
